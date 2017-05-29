@@ -1,0 +1,1 @@
+export class ListItem {} //used as base class in typescript.

@@ -1,0 +1,11 @@
+<nav [class.open]="isOpen">
+	
+	<div (click)="close()" class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+	
+	<a *ngIf="logo" class="logo menu-item" href="/"><span><img src="{{logo.image}}"/>&nbsp; {{logo.brand}}</span></a>
+	
+	<a class="menu-item" [class.active]="selectedItem === item.title" *ngFor="let item of menuItems" [routerLink]="item.href" (click)="selectMenuItem(item)">
+		<i class="fa {{item.icoClass}} fa-fw ico" aria-hidden="true"></i>&nbsp; {{item.title}}
+	</a>
+	
+</nav>

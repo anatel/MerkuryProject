@@ -1,0 +1,29 @@
+<div class="list">
+	
+	<div class="title" [class.bottom-border]="type === 'activities'" [ngSwitch]="type">
+		{{listTitle}}		
+		<span *ngSwitchCase="'tasks'">
+			<circle [content]="listItems.length" textColor="#fff" circleColor="#5384FF" size="32px"></circle>
+			<circle [content]="countDelayedTasks()" textColor="#fff" circleColor="#F83C7B" size="32px"></circle>			
+		</span>
+		
+		<circle *ngSwitchCase="'messages'" [content]="countUnreadMessages()" textColor="#fff" circleColor="#5384FF" size="32px"></circle>
+		
+		<circle *ngSwitchCase="'activities'" [content]="listItems.length" textColor="#fff" circleColor="#5384FF" size="32px"></circle>
+	</div>
+	
+	<div class="list-items" [ngSwitch]="type">		
+		<span *ngSwitchCase="'tasks'">
+			<task  *ngFor="let item of listItems | slice:0:limit" [task]="item"></task>
+		</span>
+		
+		<span *ngSwitchCase="'messages'">
+			<message *ngFor="let item of listItems | slice:0:limit" [message]="item"></message>
+		</span>
+			
+		<span *ngSwitchCase="'activities'" >
+			<activity *ngFor="let item of listItems | slice:0:limit" [activity]="item"></activity>
+		</span>			
+	</div>
+	
+</div>

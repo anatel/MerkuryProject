@@ -1,0 +1,14 @@
+[
+	{
+		"data": "notification #1",
+		"read": false
+	},
+	{
+		"data": "notification #2",
+		"read": false
+	},
+	{
+		"data": "notification #3",
+		"read": true
+	}
+]

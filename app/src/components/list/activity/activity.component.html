@@ -1,0 +1,20 @@
+<div class="activity">
+	
+	<div class="doer-image">
+		<span class="flow-line flow-line--upper"></span>
+			<circle [imgPath]="activity.doerImg" size="32px"></circle>
+		<span class="flow-line flow-line--bottom"></span>
+	</div>
+
+	<div class="activity-details">
+		<div>
+			<span class="bold-content">{{activity.doer}} </span> 
+			<span class="grey-text"> {{activity.action}} </span> 
+			<span class="bold-content">{{activity.subject | truncate: [8, ' (...)']}}</span>				
+		</div>
+		<div class="grey-text top-margin">
+			<i class="fa fa-clock-o"></i> {{activity.time | amTimeAgo}}
+		</div>
+	</div>
+	
+</div>

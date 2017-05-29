@@ -1,0 +1,82 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #E8EAF0;
+	display: flex;
+	justify-content:space-between; 
+	align-items: center;
+	box-sizing: border-box;
+	transition: 0.5s;
+	padding: 0 45px;
+	z-index:10;
+}
+
+header.pushed {
+	padding-left: 230px;
+}
+
+header a {
+  display: inline-block;
+  color: #0E1A35;
+  text-align: center;
+  padding: 9px 11px;
+  text-decoration: none;
+  font-size: 18px;
+	position:relative;
+}
+
+header a:hover {
+	color:#254792;
+}
+
+.menu-open-indicator {
+	transform: scale(-1,1);
+	display: inline-block;
+	color: #5584FF;
+	margin-right: 2px;
+}
+
+.right-content {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.badge {
+	background-color: #5584FF;
+	display: block;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	right: 7px;
+	top: 4px;
+	border-radius: 100%;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	font-size: 10px;
+	text-align: center;
+}
+
+.btn {
+	font-size: 14px !important;
+	background-color: #5584FF;
+	border-radius: 100px;
+	color: #FFFFFF !important;
+	padding-left: 18px !important;
+	padding-right: 18px !important;
+	margin-right: 20px;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	transform: scale(1.05);
+}
+
+@media screen and (max-width: 760px) {
+	header {
+		padding: 0 15px;
+	}
+}

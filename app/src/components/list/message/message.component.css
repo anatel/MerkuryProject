@@ -1,0 +1,46 @@
+.message {
+	background-color: #FFFFFF;
+	border-top: 1px solid  #E8EAF0;
+	padding: 12px 20px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	font-size: 13px;
+	height: 80px;
+	box-sizing: border-box;
+}
+
+.sender-image {
+	height: 32px;
+	margin-right: 3%;
+}
+
+.unread-message {
+	background-color: #F4F5F8;
+}
+
+.msg-details__sender {
+  font-weight: bold;
+}
+
+.msg-details__timing, .msg-details__actions a {
+	color: #9EA9C0;
+}
+
+.top-margin {
+	margin-top: 5px;
+}
+
+.msg-details__actions a {
+	margin-right: 5px;
+}
+
+.msg-details__actions a:hover {
+	color: #8492af;
+}
+
+@media screen and (max-width: 900px) {
+	.message {
+		height: 110px;
+	}
+}

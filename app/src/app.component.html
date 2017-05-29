@@ -1,0 +1,6 @@
+<side-menu [(isOpen)]="isMenuOpen"></side-menu>
+
+<main [class.pushed]="isMenuOpen">
+	<header-bar (toggleMenu)="toggleMenu($event)" [isMenuOpen]="isMenuOpen"></header-bar>
+	<router-outlet></router-outlet>
+</main>

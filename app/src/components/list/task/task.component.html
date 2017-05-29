@@ -1,0 +1,16 @@
+<div class="task">
+	
+	<div class="task-letter">
+		<circle [content]="task.title | firstLetter" size="32px" textColor="#fff" circleColor="#5384FF"></circle>
+	</div>
+
+	<div class="task-details">
+		<div class="task-details__task-text">{{task.title}}</div>
+		<div class="task-details__timings" [class.delay]="task.days > 0" [class.pending]="task.days <= 0"><i class="fa fa-clock-o"></i> {{task.days | absoluteVal }} days {{task.days < 0? 'left' : 'delays'}}</div>
+	</div>
+		
+	<div class="menu-btn">
+		<i class="fa fa-ellipsis-v"></i>
+	</div>
+		
+</div>

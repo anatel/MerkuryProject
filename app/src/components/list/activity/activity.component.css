@@ -1,0 +1,62 @@
+.activity {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid  #fff;
+	padding: 22px 20px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	font-size: 13px;
+	height: 80px;
+	box-sizing: border-box;
+}
+
+.doer-image {
+	height: 32px;
+	margin-right: 3%;
+	position: relative;
+}
+
+.bold-content {
+	font-weight: bold;
+}
+
+.grey-text {
+	color: #9EA9C0;
+}
+
+.top-margin {
+	margin-top: 5px;
+}
+
+.flow-line {
+	height: 25px;
+	border-left: 1px solid #E8EAF0;
+	position: absolute;
+	left: 50%;
+}
+
+.flow-line--upper	{
+	top: -24px;
+}
+
+.flow-line--bottom {
+    bottom: -25px;
+}
+
+@media screen and (max-width: 900px) {
+	.activity {
+		height: 110px;
+	}
+	
+	.flow-line--upper {
+		top: -39px;
+	}
+	
+	.flow-line--bottom {
+		bottom: -39px;
+	}
+	
+	.flow-line {
+		height: 39px;
+	}
+}

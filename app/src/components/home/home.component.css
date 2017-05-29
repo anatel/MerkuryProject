@@ -1,0 +1,60 @@
+main {
+	background-color: #F6F7FA;
+	padding: 20px 50px;
+	display: flex;
+	flex-flow: column;
+}
+
+.chart {
+	height: 350px;
+	border: 1px solid #E8EAF0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #E8EAF0;
+	font-size: 30px;
+	font-weight: bold;
+	flex-basis: 0;
+	background-color: #FFFFFF;
+}
+
+.charts, .lists {
+	display: flex;
+}
+
+.reports-chart {	
+	flex-grow: 2;
+}
+
+.sales-chart, list {
+	flex-grow: 1;
+	margin-right: 30px;
+	flex-basis: 9%;
+}
+
+.lists {
+	margin-top: 20px;
+}
+
+.lists list:last-child {
+	margin-right: 0px;
+}
+
+@media screen and (max-width: 760px) {
+	main {
+		padding: 20px 20px;
+	}
+	
+	.charts, .lists {
+		flex-flow: column;
+		margin-top: 0;
+	}
+	
+	.chart, list {
+		margin-bottom: 10px;
+		float: left;
+    width: 100%;
+		flex-basis: 100%;
+	}
+	
+}

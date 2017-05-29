@@ -1,0 +1,51 @@
+.task {
+	background-color: #FFFFFF;
+	border-top: 1px solid  #E8EAF0;
+	padding: 20px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 80px;
+	box-sizing: border-box;
+}
+
+.task-letter {
+	margin-right: 3%;
+}
+
+.task-details__task-text {
+	font-weight: bold;
+}
+
+.task-details__timings {	
+  font-size: 13px;
+	margin-top: 5px;
+}
+
+.delay {
+	color: #F83C7B;
+}
+
+.pending {
+	color: #9EA9C0;
+}
+
+.menu-btn {
+	color: #8492AF;
+	font-size: 30px;
+	position: absolute;
+  right: 6%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu-btn:hover {
+	cursor: pointer;
+	color: #5b6477;
+}
+
+@media screen and (max-width: 900px) {
+	.task {
+		height: 110px;
+	}
+}

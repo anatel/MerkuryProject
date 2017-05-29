@@ -1,0 +1,21 @@
+<div class="message" [class.unread-message]="!message.read">
+	
+	<div class="sender-image">
+		<circle [imgPath]="message.senderImg" size="32px"></circle>
+	</div>
+
+	<div class="msg-details">
+		<div>
+			<span class="msg-details__sender">{{message.sender}} </span>
+			<span class="msg-details__timing"> {{message.time | amTimeAgo}}</span>			
+		</div>
+		<div class="msg-details__content top-margin">
+			{{message.text | truncate : [45,' (...)']}}
+		</div>
+		<div class="msg-details__actions top-margin">
+			<a href="#" title="Reply"><i class="fa fa-reply" aria-hidden="true"></i></a>
+			<a href="#" title="Options"><i class="fa fa-cog" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	
+</div>

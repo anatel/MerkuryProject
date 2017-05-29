@@ -1,0 +1,14 @@
+<header [class.pushed]="isMenuOpen">
+	<div>
+		<a (click)="onMenuClick($event)" href="#"><span *ngIf="isMenuOpen" class="menu-open-indicator">&#8227;</span><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+	</div>
+	
+	<div class="right-content">
+		<a href="#"><circle-drop-down *ngIf="userData" [image]="userData.img"></circle-drop-down></a>
+		<a href="#"><span class="badge" *ngIf="notifications">{{countNewNotifications()}}</span><i class="fa fa-bell" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+		<a href="#" class="btn">+ Add project</a>
+	</div>		
+  
+</header>

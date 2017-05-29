@@ -1,0 +1,29 @@
+.list {
+	border: 1px solid #E8EAF0;	
+}
+
+.title {
+	font-weight: bold;
+	padding: 16px 20px;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 64px;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+}
+
+circle {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.bottom-border {
+	border-bottom: 1px solid #E8EAF0;
+}
+
+.list-items {
+	display: flex;
+	flex-direction: column;
+}

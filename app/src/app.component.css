@@ -1,0 +1,9 @@
+main {
+	margin-top: 64px;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+
+.pushed {
+	padding-left: 230px;
+}

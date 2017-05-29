@@ -1,0 +1,30 @@
+[
+ {
+   "sender": "Nina Jones",
+   "senderImg": "./app/assets/images/nina.jpg",
+   "text": "Hey You! It's me again :-) I attached new files to the email.",
+   "time": "05/28/2017",
+   "read": false
+ },
+ {
+   "sender": "Nina Jones",
+   "senderImg": "./app/assets/images/nina.jpg",
+   "text": "Hey! attached some new PSD file for the design.",
+   "time": "05/26/2017",
+   "read": false
+ },
+ {
+   "sender": "James Smith",
+   "senderImg": "./app/assets/images/james.jpg",
+   "text": "Good morning. you are fired!",
+   "time": "05/15/2017",
+   "read": true
+ },
+ {
+   "sender": "Nina Jones",
+   "senderImg": "./app/assets/images/nina.jpg",
+   "text": "Hello! Could You bring me coffee please?",
+   "time": "03/05/2017",
+   "read": true
+ }
+]

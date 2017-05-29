@@ -1,0 +1,38 @@
+{
+   "items": [
+      {
+         "title": "Home",
+         "href": "/home",
+         "icoClass": "fa-home"
+      },
+      {
+         "title": "Workflow",
+         "href": "/workflow",
+         "icoClass": "fa-th-list"
+      },
+      {
+         "title": "Statistics",
+         "href": "/statistics",
+         "icoClass": "fa-line-chart"
+      },
+      {
+         "title": "Calendar",
+         "href": "/calendar",
+         "icoClass": "fa-calendar"
+      },
+      {
+         "title": "Users",
+         "href": "/users",
+         "icoClass": "fa-user-o"
+      },
+      {
+         "title": "Settings",
+         "href": "/settings",
+         "icoClass": "fa-cog"
+      }
+   ],
+   "logo": {
+      "brand": "Merkury",
+      "image": "./app/assets/images/logo.png"
+   }
+}
