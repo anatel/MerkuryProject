@@ -3,6 +3,7 @@ main {
 	padding: 20px 50px;
 	display: flex;
 	flex-flow: column;
+	margin-top: 60px;
 }
 
 .chart {
